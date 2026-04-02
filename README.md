@@ -118,3 +118,6 @@ I built a 3-block Convolutional Neural Network with Batch Normalization and MaxP
 The model extracts spatial features from chest X-ray images and classifies them using a sigmoid output layer.
 I used data augmentation to reduce overfitting and improve generalization.
 The model achieved around 90% training accuracy and around 70% validation accuracy.
+
+<img width="415" height="150" alt="image" src="https://github.com/user-attachments/assets/a6c9b87c-4535-4077-a4dc-ec93ddc15e08" />
+
