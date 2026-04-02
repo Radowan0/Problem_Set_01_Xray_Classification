@@ -1,4 +1,4 @@
-## This project builds a CNN model to classify Chest X-ray images into two main categories: Normal & Pneumonia
+## **This project builds a CNN model to classify Chest X-ray images into two main categories: Normal & Pneumonia**
 
 This project uses TensonFlow/keras, data augmentation, CNN architecture, and training visualition 
 
@@ -32,26 +32,26 @@ This makes the model more robust.
 
 ## CNN Architecture
   Input Image (224x224x3)
+   
+      CONV BLOCK 1
+      Conv2D(32 filters, 3x3)
+      BatchNormalization
+      MaxPooling2D
 
-1️.  CONV BLOCK 1
-    Conv2D(32 filters, 3x3)
-    BatchNormalization
-    MaxPooling2D
+      CONV BLOCK 2
+      Conv2D(64 filters, 3x3)
+      BatchNormalization
+      MaxPooling2D
+   
+      CONV BLOCK 3
+      Conv2D(128 filters, 3x3)
+      BatchNormalization
+      MaxPooling2D
 
-2️.  CONV BLOCK 2
-    Conv2D(64 filters, 3x3)
-    BatchNormalization
-    MaxPooling2D
-
-3️.  CONV BLOCK 3
-    Conv2D(128 filters, 3x3)
-    BatchNormalization
-    MaxPooling2D
-
-Flatten
-Dense(128, relu)
-Dropout(0.5)
-Dense(1, sigmoid)
+    Flatten
+    Dense(128, relu)
+    Dropout(0.5)
+    Dense(1, sigmoid)
 
 
 ## Explanation of the Layers has been used in this CNN architecture
