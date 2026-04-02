@@ -1,9 +1,9 @@
-This project builds a CNN model to classify Chest X-ray images into two main categories:
+## This project builds a CNN model to classify Chest X-ray images into two main categories:
 Normal and Pneumonia
 
 This project uses TensonFlow/keras, data augmentation, CNN architecture, and training visualition 
 
-* Dataset Preparation:
+## Dataset Preparation:
    My dataset structured as:
   
 dataset/
@@ -19,7 +19,7 @@ dataset/
 
 Each folder contains real X-ray images
 
-* To improve training, we used ImageDataGenerator with Data Augmentation
+## To improve training, we used ImageDataGenerator with Data Augmentation
   Used to artificially increase dataset size and avoid overfitting:
    -rotation_range=20
    -width_shift_range=0.2
@@ -31,7 +31,7 @@ Each folder contains real X-ray images
 
 This makes the model more robust.
 
-* CNN Architecture
+## CNN Architecture
   Input Image (224x224x3)
 
 1️.  CONV BLOCK 1
@@ -84,14 +84,14 @@ Dense(1, sigmoid)
     1 → Pneumonia
 
 
-* Model Compilation:
+## Model Compilation:
   loss = 'binary_crossentropy'    → correct for binary output
   optimizer = 'adam'              → fast and adaptive optimizer
   metrics = ['accuracy']          → easy to evaluate performance
 
 
   
-* Model Training:
+## Model Training:
  I trained for 20 epochs.
  During training, the model learns by:
  Reading training images, making predictions, comparing prediction vs real label,adjusting weights using backpropagation.
