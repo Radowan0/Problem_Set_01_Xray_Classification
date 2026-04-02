@@ -5,28 +5,28 @@ This project uses TensonFlow/keras, data augmentation, CNN architecture, and tra
 ## Dataset Preparation:
    My dataset structured as:
   
-dataset/
-    train/
-        NORMAL/
-        PNEUMONIA/
-    val/
-        NORMAL/
-        PNEUMONIA/
-    test/
-        NORMAL/
-        PNEUMONIA/
+- dataset/
+    - train/
+        - NORMAL/
+        - PNEUMONIA/
+    - val/
+        - NORMAL/
+        - PNEUMONIA/
+    - test/
+        - NORMAL/
+        - PNEUMONIA/
 
 Each folder contains real X-ray images
 
 ## To improve training, we used ImageDataGenerator with Data Augmentation
   Used to artificially increase dataset size and avoid overfitting:
-   -rotation_range=20
-   -width_shift_range=0.2
-   -height_shift_range=0.2
-   -shear_range=0.2
-   -zoom_range=0.2
-   -horizontal_flip=True
-   -rescale=1/255
+   - rotation_range=20
+   - width_shift_range=0.2
+   - height_shift_range=0.2
+   - shear_range=0.2
+   - zoom_range=0.2
+   - horizontal_flip=True
+   - rescale=1/255
 
 This makes the model more robust.
 
