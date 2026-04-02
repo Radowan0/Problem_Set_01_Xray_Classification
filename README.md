@@ -1,5 +1,4 @@
-## This project builds a CNN model to classify Chest X-ray images into two main categories:
-Normal and Pneumonia
+## This project builds a CNN model to classify Chest X-ray images into two main categories: Normal & Pneumonia
 
 This project uses TensonFlow/keras, data augmentation, CNN architecture, and training visualition 
 
@@ -97,5 +96,25 @@ Dense(1, sigmoid)
  Reading training images, making predictions, comparing prediction vs real label,adjusting weights using backpropagation.
  I also used validation data to check if the model is generalizing.
 
+## Training Output (My Exact Result)
+   My final output showed:
+* Training accuracy: ~90–93%
+* Validation accuracy: ~60–75%
+* Training loss: Low (below 0.5)
+* Validation loss: Fluctuating
 
+## Why Validation Accuracy Jumps Up & Down?
 
+Because:
+pneumonia images vary a lot, dataset is not perfectly clean, validation set may be small.
+Still the model learned strong features.
+
+## Final Test Accuracy
+Test Accuracy: 0.8910  (89%)
+Test Loss: 0.2661
+
+## Conclusion:
+I built a 3-block Convolutional Neural Network with Batch Normalization and MaxPooling layers.
+The model extracts spatial features from chest X-ray images and classifies them using a sigmoid output layer.
+I used data augmentation to reduce overfitting and improve generalization.
+The model achieved around 90% training accuracy and around 70% validation accuracy.
